@@ -1,0 +1,1520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C3CF80820B3B2A5004C2967 /* IntegralWithdrawalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80420B3B2A4004C2967 /* IntegralWithdrawalModel.swift */; };
+		0C3CF80920B3B2A5004C2967 /* WithdrawalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80520B3B2A4004C2967 /* WithdrawalModel.swift */; };
+		0C3CF80A20B3B2A5004C2967 /* CommissionWithdrawalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80620B3B2A5004C2967 /* CommissionWithdrawalModel.swift */; };
+		0C3CF80B20B3B2A5004C2967 /* WithdrawalRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80720B3B2A5004C2967 /* WithdrawalRecordModel.swift */; };
+		0C3CF81020B3B2AF004C2967 /* WithdrawalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3CF80C20B3B2AD004C2967 /* WithdrawalTableViewCell.xib */; };
+		0C3CF81120B3B2AF004C2967 /* WithdrawalRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3CF80D20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.xib */; };
+		0C3CF81220B3B2AF004C2967 /* WithdrawalRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80E20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.swift */; };
+		0C3CF81320B3B2AF004C2967 /* WithdrawalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF80F20B3B2AE004C2967 /* WithdrawalTableViewCell.swift */; };
+		0C3CF81720B3B2C0004C2967 /* IntegralWithdrawalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81420B3B2BF004C2967 /* IntegralWithdrawalVC.swift */; };
+		0C3CF81820B3B2C0004C2967 /* WithdrawalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81520B3B2BF004C2967 /* WithdrawalVC.swift */; };
+		0C3CF81920B3B2C0004C2967 /* CommissionWithdrawalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81620B3B2C0004C2967 /* CommissionWithdrawalVC.swift */; };
+		0C3CF81B20B3B327004C2967 /* WithdrawalRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81A20B3B327004C2967 /* WithdrawalRecordVC.swift */; };
+		0C3CF81E20B3C0D3004C2967 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81C20B3C0D2004C2967 /* UIImage+QRCode.swift */; };
+		0C3CF81F20B3C0D3004C2967 /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF81D20B3C0D3004C2967 /* String+QRCode.swift */; };
+		0C82F7CC208887D400ED0B6F /* MyOilCardListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82F7CB208887D400ED0B6F /* MyOilCardListModel.swift */; };
+		0CF654AE20882E18005CF59C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF654AD20882E18005CF59C /* AppDelegate.swift */; };
+		0CF654B820882E48005CF59C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF654B120882E47005CF59C /* LaunchScreen.storyboard */; };
+		0CF654B920882E48005CF59C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF654B320882E47005CF59C /* Main.storyboard */; };
+		0CF654BA20882E48005CF59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF654B520882E47005CF59C /* Assets.xcassets */; };
+		4BAE2E0E6B7F96EC106F8182 /* Pods_OilFleetBoss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9FBCFCB4D1563674283144 /* Pods_OilFleetBoss.framework */; };
+		660298DF1FE3B5E700CD4F18 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660298DA1FE3B5E700CD4F18 /* QRCodeReaderView.swift */; };
+		660298E01FE3B5E700CD4F18 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660298DB1FE3B5E700CD4F18 /* Category.swift */; };
+		660298E11FE3B5E700CD4F18 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660298DC1FE3B5E700CD4F18 /* QRCodeViewController.swift */; };
+		660298E21FE3B5E700CD4F18 /* MineQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660298DD1FE3B5E700CD4F18 /* MineQRCodeViewController.swift */; };
+		660298E31FE3B5E700CD4F18 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 660298DE1FE3B5E700CD4F18 /* noticeMusic.wav */; };
+		660A51341F8F17F2009BF6F2 /* AddNewWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660A51331F8F17F2009BF6F2 /* AddNewWorkerViewController.swift */; };
+		660A51361F8F5FEA009BF6F2 /* LinesDistributionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660A51351F8F5FEA009BF6F2 /* LinesDistributionModel.swift */; };
+		660A51881F906ED3009BF6F2 /* StringMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660A51871F906ED3009BF6F2 /* StringMD5.swift */; };
+		661052141F6A1790002B1A18 /* OilFleetBossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052131F6A1790002B1A18 /* OilFleetBossTests.swift */; };
+		6610521F1F6A1790002B1A18 /* OilFleetBossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6610521E1F6A1790002B1A18 /* OilFleetBossUITests.swift */; };
+		661052451F6A1DD8002B1A18 /* MDKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052441F6A1DD8002B1A18 /* MDKBaseViewController.swift */; };
+		661052471F6A1E20002B1A18 /* MDKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052461F6A1E20002B1A18 /* MDKConst.swift */; };
+		661052491F6A1EF8002B1A18 /* MDKNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052481F6A1EF8002B1A18 /* MDKNetWorkTool.swift */; };
+		6610524B1F6A1F5C002B1A18 /* MDKHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6610524A1F6A1F5C002B1A18 /* MDKHomeItem.swift */; };
+		6610524D1F6A2009002B1A18 /* MDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6610524C1F6A2009002B1A18 /* MDKViewController.swift */; };
+		661052511F6A2055002B1A18 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052501F6A2055002B1A18 /* MineViewController.swift */; };
+		661052531F6A205D002B1A18 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052521F6A205D002B1A18 /* FindViewController.swift */; };
+		661052551F6A21B1002B1A18 /* MDKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052541F6A21B1002B1A18 /* MDKNavigationController.swift */; };
+		661052581F6A227A002B1A18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661052561F6A227A002B1A18 /* LoginViewController.swift */; };
+		661052591F6A227A002B1A18 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 661052571F6A227A002B1A18 /* LoginViewController.xib */; };
+		6610525B1F6A2CB9002B1A18 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6610525A1F6A2CB9002B1A18 /* LoginModel.swift */; };
+		6619B3AF1FA07D890085CC4D /* MyPlaceTheOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6619B3AE1FA07D890085CC4D /* MyPlaceTheOrderViewController.swift */; };
+		664601A11F7F7FF50080F18E /* NowCallOilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A01F7F7FF50080F18E /* NowCallOilViewController.swift */; };
+		664601A31F7F82760080F18E /* NowCallOilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A21F7F82760080F18E /* NowCallOilTableViewCell.swift */; };
+		664601AA1F7F8C0C0080F18E /* JWAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A51F7F8C0C0080F18E /* JWAutoScrollView.swift */; };
+		664601AB1F7F8C0C0080F18E /* JWDatePickerKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A71F7F8C0C0080F18E /* JWDatePickerKeyBoardView.swift */; };
+		664601AC1F7F8C0C0080F18E /* JWDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A81F7F8C0C0080F18E /* JWDatePickerView.swift */; };
+		664601AD1F7F8C0C0080F18E /* JWPickerKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664601A91F7F8C0C0080F18E /* JWPickerKeyBoardView.swift */; };
+		664844891F8B4CA500130BEC /* AddNewSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844881F8B4CA500130BEC /* AddNewSiteViewController.swift */; };
+		6648448B1F8B55B400130BEC /* areas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6648448A1F8B55B400130BEC /* areas.plist */; };
+		6648448D1F8B55BC00130BEC /* AreaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648448C1F8B55BC00130BEC /* AreaPickerViewController.swift */; };
+		664844901F8B636100130BEC /* RegistPhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648448E1F8B636100130BEC /* RegistPhoViewController.swift */; };
+		664844911F8B636100130BEC /* RegistPhoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6648448F1F8B636100130BEC /* RegistPhoViewController.xib */; };
+		664844941F8B655F00130BEC /* RegistCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844921F8B655F00130BEC /* RegistCodeViewController.swift */; };
+		664844951F8B655F00130BEC /* RegistCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664844931F8B655F00130BEC /* RegistCodeViewController.xib */; };
+		664844971F8B752100130BEC /* MyConstructionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844961F8B752100130BEC /* MyConstructionModel.swift */; };
+		664844991F8C608000130BEC /* EditSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844981F8C607F00130BEC /* EditSiteViewController.swift */; };
+		664844A41F8C964E00130BEC /* JWAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648449C1F8C964E00130BEC /* JWAlertAction.swift */; };
+		664844A51F8C964E00130BEC /* JWAlertDismissTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648449E1F8C964E00130BEC /* JWAlertDismissTransitioning.swift */; };
+		664844A61F8C964E00130BEC /* JWAlertPresentTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648449F1F8C964E00130BEC /* JWAlertPresentTransitioning.swift */; };
+		664844A71F8C964E00130BEC /* JWAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844A11F8C964E00130BEC /* JWAlertController.swift */; };
+		664844A81F8C964E00130BEC /* JWActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844A31F8C964E00130BEC /* JWActionButton.swift */; };
+		664844AA1F8DA5EF00130BEC /* EditMineInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844A91F8DA5EF00130BEC /* EditMineInfoViewController.swift */; };
+		664844AD1F8DA70000130BEC /* EditMineInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844AB1F8DA70000130BEC /* EditMineInfoTableViewCell.swift */; };
+		664844AE1F8DA70000130BEC /* EditMineInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664844AC1F8DA70000130BEC /* EditMineInfoTableViewCell.xib */; };
+		664844B01F8DA8C700130BEC /* EditMineInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844AF1F8DA8C700130BEC /* EditMineInfoModel.swift */; };
+		664844B21F8DEC7F00130BEC /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844B11F8DEC7F00130BEC /* EditInfoViewController.swift */; };
+		664844B61F8DF4EB00130BEC /* UIimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664844B51F8DF4EB00130BEC /* UIimageView.swift */; };
+		664A79E0201B2FDA0028E711 /* MDKBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A79DF201B2FDA0028E711 /* MDKBaseListViewController.swift */; };
+		664A79E2201B304E0028E711 /* MDKbaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A79E1201B304E0028E711 /* MDKbaseTableViewCell.swift */; };
+		666377791FA3048E006F64B3 /* MyApplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666377771FA3048E006F64B3 /* MyApplyTableViewCell.swift */; };
+		6663777A1FA3048E006F64B3 /* MyApplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666377781FA3048E006F64B3 /* MyApplyTableViewCell.xib */; };
+		6663777C1FA312BC006F64B3 /* MyOilCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6663777B1FA312BC006F64B3 /* MyOilCardModel.swift */; };
+		6688F6481F8B148900517506 /* JWProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688F6461F8B148900517506 /* JWProgressHUD.swift */; };
+		6688F6491F8B148900517506 /* JWProgressHUDLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688F6471F8B148900517506 /* JWProgressHUDLoadingView.swift */; };
+		669F9F851F7B72E9002D3C5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9F831F7B72E9002D3C5F /* HomeViewController.swift */; };
+		669F9F861F7B72E9002D3C5F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9F841F7B72E9002D3C5F /* HomeViewController.xib */; };
+		669F9F8F1F7BA7CB002D3C5F /* OilOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9F8D1F7BA7CB002D3C5F /* OilOrderViewController.swift */; };
+		669F9F901F7BA7CB002D3C5F /* OilOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9F8E1F7BA7CB002D3C5F /* OilOrderViewController.xib */; };
+		669F9F9B1F7C8699002D3C5F /* MainCardLimitApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9F991F7C8699002D3C5F /* MainCardLimitApplyViewController.swift */; };
+		669F9F9C1F7C8699002D3C5F /* MainCardLimitApplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9F9A1F7C8699002D3C5F /* MainCardLimitApplyViewController.xib */; };
+		669F9F9E1F7C9359002D3C5F /* OilCardApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9F9D1F7C9359002D3C5F /* OilCardApplyViewController.swift */; };
+		669F9FA01F7C9385002D3C5F /* OilCardApplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9F9F1F7C9385002D3C5F /* OilCardApplyTableViewCell.swift */; };
+		669F9FA21F7C982C002D3C5F /* OilCardApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FA11F7C982C002D3C5F /* OilCardApplyModel.swift */; };
+		669F9FA41F7CA106002D3C5F /* MyConstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FA31F7CA106002D3C5F /* MyConstructionViewController.swift */; };
+		669F9FA71F7CA11A002D3C5F /* MyConstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FA51F7CA11A002D3C5F /* MyConstructionTableViewCell.swift */; };
+		669F9FA81F7CA11A002D3C5F /* MyConstructionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9FA61F7CA11A002D3C5F /* MyConstructionTableViewCell.xib */; };
+		669F9FAA1F7CA5C0002D3C5F /* MyMainOilCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FA91F7CA5C0002D3C5F /* MyMainOilCardViewController.swift */; };
+		669F9FAD1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FAB1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.swift */; };
+		669F9FAE1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9FAC1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.xib */; };
+		669F9FB11F7CFDD6002D3C5F /* LinesApplySuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FAF1F7CFDD6002D3C5F /* LinesApplySuccessViewController.swift */; };
+		669F9FB21F7CFDD6002D3C5F /* LinesApplySuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9FB01F7CFDD6002D3C5F /* LinesApplySuccessViewController.xib */; };
+		669F9FB41F7D0245002D3C5F /* MyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FB31F7D0245002D3C5F /* MyOrderViewController.swift */; };
+		669F9FB91F7D0747002D3C5F /* MyOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F9FB71F7D0747002D3C5F /* MyOrderTableViewCell.swift */; };
+		669F9FBA1F7D0747002D3C5F /* MyOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669F9FB81F7D0747002D3C5F /* MyOrderTableViewCell.xib */; };
+		66A8F22A1F98771F0065EE29 /* MYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F2291F98771F0065EE29 /* MYCycleScrollView.swift */; };
+		66A8F22C1F9877330065EE29 /* BannersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F22B1F9877330065EE29 /* BannersModel.swift */; };
+		66AE61E51F6FC9C600C3B174 /* ForgetPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE61E31F6FC9C600C3B174 /* ForgetPassWordViewController.swift */; };
+		66AE61E61F6FC9C600C3B174 /* ForgetPassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AE61E41F6FC9C600C3B174 /* ForgetPassWordViewController.xib */; };
+		66BDCBCB1FADC54100035225 /* MyBillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDCBCA1FADC54100035225 /* MyBillModel.swift */; };
+		66BDCBCD1FAFF6CE00035225 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDCBCC1FAFF6CE00035225 /* TimerButton.swift */; };
+		66BDCBCF1FB05A6000035225 /* EditPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDCBCE1FB05A6000035225 /* EditPassWordViewController.swift */; };
+		66BDCBD11FB05C3900035225 /* MyPlaceTheOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDCBD01FB05C3900035225 /* MyPlaceTheOrderModel.swift */; };
+		66CD58512087AFF400DAD980 /* OilValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD58502087AFF400DAD980 /* OilValue.swift */; };
+		66D04EFB1F7F25FD003F6257 /* FillIdCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04EF91F7F25FD003F6257 /* FillIdCardViewController.swift */; };
+		66D04EFC1F7F25FD003F6257 /* FillIdCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D04EFA1F7F25FD003F6257 /* FillIdCardViewController.xib */; };
+		66D04EFE1F7F2DD4003F6257 /* MyOilCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04EFD1F7F2DD4003F6257 /* MyOilCardViewController.swift */; };
+		66D04F011F7F2E09003F6257 /* MyOilCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04EFF1F7F2E09003F6257 /* MyOilCardTableViewCell.swift */; };
+		66D04F021F7F2E09003F6257 /* MyOilCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D04F001F7F2E09003F6257 /* MyOilCardTableViewCell.xib */; };
+		66D04F041F7F33DE003F6257 /* MyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04F031F7F33DE003F6257 /* MyBillViewController.swift */; };
+		66D04F071F7F3401003F6257 /* MyBillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04F051F7F3401003F6257 /* MyBillTableViewCell.swift */; };
+		66D04F081F7F3401003F6257 /* MyBillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D04F061F7F3401003F6257 /* MyBillTableViewCell.xib */; };
+		66D04F0A1F7F3A20003F6257 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04F091F7F3A20003F6257 /* SetUpViewController.swift */; };
+		66D04F0C1F7F419E003F6257 /* LinesDistributionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04F0B1F7F419E003F6257 /* LinesDistributionViewController.swift */; };
+		66D04F121F7F6A0E003F6257 /* LinesDistributionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D04F111F7F6A0E003F6257 /* LinesDistributionTableViewCell.swift */; };
+		66D786C31FEBC04A004D444A /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D786C21FEBC04A004D444A /* OrderDetailsModel.swift */; };
+		66D786C61FEBC052004D444A /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D786C41FEBC052004D444A /* OrderDetailsTableViewCell.xib */; };
+		66D786C71FEBC052004D444A /* OrderDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D786C51FEBC052004D444A /* OrderDetailsTableViewCell.swift */; };
+		66D786C91FEBC058004D444A /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D786C81FEBC058004D444A /* OrderDetailsViewController.swift */; };
+		66DB4D361FA6C238000090E2 /* MyApplymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB4D351FA6C238000090E2 /* MyApplymodel.swift */; };
+		66E13D5F1F96EE550092BE5D /* RegistPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D5D1F96EE550092BE5D /* RegistPassWordViewController.swift */; };
+		66E13D601F96EE550092BE5D /* RegistPassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E13D5E1F96EE550092BE5D /* RegistPassWordViewController.xib */; };
+		66E13D721F96F4630092BE5D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D711F96F4630092BE5D /* AboutUsViewController.swift */; };
+		66E13D741F9701120092BE5D /* OilOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D731F9701120092BE5D /* OilOrderModel.swift */; };
+		66E13D761F9709E80092BE5D /* OilOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D751F9709E80092BE5D /* OilOrderTableViewCell.swift */; };
+		66E13D781F9722C90092BE5D /* NowCallOilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D771F9722C90092BE5D /* NowCallOilModel.swift */; };
+		66E13D941F9838A80092BE5D /* FNMatchPullMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D8D1F9838A80092BE5D /* FNMatchPullMatch.swift */; };
+		66E13D951F9838A80092BE5D /* FNAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D8E1F9838A80092BE5D /* FNAnimator.swift */; };
+		66E13D961F9838A80092BE5D /* FNMatchFontParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D8F1F9838A80092BE5D /* FNMatchFontParser.swift */; };
+		66E13D971F9838A80092BE5D /* FNMatchPullAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D901F9838A80092BE5D /* FNMatchPullAnimator.swift */; };
+		66E13D981F9838A80092BE5D /* FNPullToRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D911F9838A80092BE5D /* FNPullToRefreshExtension.swift */; };
+		66E13D991F9838A80092BE5D /* FNMatchPullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D921F9838A80092BE5D /* FNMatchPullView.swift */; };
+		66E13D9A1F9838A80092BE5D /* FNPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E13D931F9838A80092BE5D /* FNPullToRefreshView.swift */; };
+		66E2C9191F789DA80035547F /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2C9171F789DA80035547F /* MineTableViewCell.swift */; };
+		66E2C91A1F789DA80035547F /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C9181F789DA80035547F /* MineTableViewCell.xib */; };
+		66E2C91C1F789EA20035547F /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2C91B1F789EA20035547F /* MineModel.swift */; };
+		66E7F0301F7A23FE00DCA4FF /* MyWorkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7F02E1F7A23FE00DCA4FF /* MyWorkerTableViewCell.swift */; };
+		66E7F0311F7A23FE00DCA4FF /* MyWorkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E7F02F1F7A23FE00DCA4FF /* MyWorkerTableViewCell.xib */; };
+		66E7F0331F7A2F5C00DCA4FF /* MyWorkerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7F0321F7A2F5C00DCA4FF /* MyWorkerModel.swift */; };
+		66E7F0361F7A336F00DCA4FF /* WorkerDetaileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7F0341F7A336F00DCA4FF /* WorkerDetaileViewController.swift */; };
+		66E7F0371F7A336F00DCA4FF /* WorkerDetaileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E7F0351F7A336F00DCA4FF /* WorkerDetaileViewController.xib */; };
+		66EB8F661FDA2C7000210F6E /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EB8F641FDA2C7000210F6E /* WithdrawalViewController.swift */; };
+		66EB8F671FDA2C7000210F6E /* WithdrawalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EB8F651FDA2C7000210F6E /* WithdrawalViewController.xib */; };
+		66EB8F691FDA2CAD00210F6E /* MyCommissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EB8F681FDA2CAD00210F6E /* MyCommissionModel.swift */; };
+		66EB8F6C1FDA2CB900210F6E /* MyCommissionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EB8F6A1FDA2CB900210F6E /* MyCommissionTableViewCell.xib */; };
+		66EB8F6D1FDA2CB900210F6E /* MyCommissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EB8F6B1FDA2CB900210F6E /* MyCommissionTableViewCell.swift */; };
+		66EB8F711FDA2D2C00210F6E /* MyCommissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EB8F701FDA2D2C00210F6E /* MyCommissionViewController.swift */; };
+		66F1F1501F9A022D0023475A /* JHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1F14F1F9A022D0023475A /* JHPickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		661052101F6A1790002B1A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661051F31F6A1790002B1A18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661051FA1F6A1790002B1A18;
+			remoteInfo = OilFleetBoss;
+		};
+		6610521B1F6A1790002B1A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661051F31F6A1790002B1A18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661051FA1F6A1790002B1A18;
+			remoteInfo = OilFleetBoss;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BED8D78CF1F5D8B853980D /* Pods-OilFleetBoss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilFleetBoss.release.xcconfig"; path = "Pods/Target Support Files/Pods-OilFleetBoss/Pods-OilFleetBoss.release.xcconfig"; sourceTree = "<group>"; };
+		0C3CF80420B3B2A4004C2967 /* IntegralWithdrawalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegralWithdrawalModel.swift; sourceTree = "<group>"; };
+		0C3CF80520B3B2A4004C2967 /* WithdrawalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalModel.swift; sourceTree = "<group>"; };
+		0C3CF80620B3B2A5004C2967 /* CommissionWithdrawalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommissionWithdrawalModel.swift; sourceTree = "<group>"; };
+		0C3CF80720B3B2A5004C2967 /* WithdrawalRecordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalRecordModel.swift; sourceTree = "<group>"; };
+		0C3CF80C20B3B2AD004C2967 /* WithdrawalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithdrawalTableViewCell.xib; sourceTree = "<group>"; };
+		0C3CF80D20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithdrawalRecordTableViewCell.xib; sourceTree = "<group>"; };
+		0C3CF80E20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalRecordTableViewCell.swift; sourceTree = "<group>"; };
+		0C3CF80F20B3B2AE004C2967 /* WithdrawalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalTableViewCell.swift; sourceTree = "<group>"; };
+		0C3CF81420B3B2BF004C2967 /* IntegralWithdrawalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegralWithdrawalVC.swift; sourceTree = "<group>"; };
+		0C3CF81520B3B2BF004C2967 /* WithdrawalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalVC.swift; sourceTree = "<group>"; };
+		0C3CF81620B3B2C0004C2967 /* CommissionWithdrawalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommissionWithdrawalVC.swift; sourceTree = "<group>"; };
+		0C3CF81A20B3B327004C2967 /* WithdrawalRecordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalRecordVC.swift; sourceTree = "<group>"; };
+		0C3CF81C20B3C0D2004C2967 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
+		0C3CF81D20B3C0D3004C2967 /* String+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
+		0C82F7CB208887D400ED0B6F /* MyOilCardListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOilCardListModel.swift; sourceTree = "<group>"; };
+		0CF654AD20882E18005CF59C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = OilFleetBoss/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		0CF654B220882E47005CF59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CF654B420882E47005CF59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		0CF654B520882E47005CF59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OilFleetBoss/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		0CF654B720882E48005CF59C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OilFleetBoss/Info.plist; sourceTree = SOURCE_ROOT; };
+		2C9FBCFCB4D1563674283144 /* Pods_OilFleetBoss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OilFleetBoss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		660298DA1FE3B5E700CD4F18 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		660298DB1FE3B5E700CD4F18 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		660298DC1FE3B5E700CD4F18 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		660298DD1FE3B5E700CD4F18 /* MineQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineQRCodeViewController.swift; sourceTree = "<group>"; };
+		660298DE1FE3B5E700CD4F18 /* noticeMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noticeMusic.wav; sourceTree = "<group>"; };
+		660A51331F8F17F2009BF6F2 /* AddNewWorkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewWorkerViewController.swift; sourceTree = "<group>"; };
+		660A51351F8F5FEA009BF6F2 /* LinesDistributionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesDistributionModel.swift; sourceTree = "<group>"; };
+		660A51871F906ED3009BF6F2 /* StringMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMD5.swift; sourceTree = "<group>"; };
+		661051FB1F6A1790002B1A18 /* OilFleetBoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilFleetBoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6610520F1F6A1790002B1A18 /* OilFleetBossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilFleetBossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		661052131F6A1790002B1A18 /* OilFleetBossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilFleetBossTests.swift; sourceTree = "<group>"; };
+		661052151F6A1790002B1A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6610521A1F6A1790002B1A18 /* OilFleetBossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilFleetBossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6610521E1F6A1790002B1A18 /* OilFleetBossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilFleetBossUITests.swift; sourceTree = "<group>"; };
+		661052201F6A1790002B1A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661052441F6A1DD8002B1A18 /* MDKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKBaseViewController.swift; sourceTree = "<group>"; };
+		661052461F6A1E20002B1A18 /* MDKConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKConst.swift; sourceTree = "<group>"; };
+		661052481F6A1EF8002B1A18 /* MDKNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKNetWorkTool.swift; sourceTree = "<group>"; };
+		6610524A1F6A1F5C002B1A18 /* MDKHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKHomeItem.swift; sourceTree = "<group>"; };
+		6610524C1F6A2009002B1A18 /* MDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKViewController.swift; sourceTree = "<group>"; };
+		661052501F6A2055002B1A18 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		661052521F6A205D002B1A18 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		661052541F6A21B1002B1A18 /* MDKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDKNavigationController.swift; sourceTree = "<group>"; };
+		661052561F6A227A002B1A18 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		661052571F6A227A002B1A18 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6610525A1F6A2CB9002B1A18 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		6619B3AE1FA07D890085CC4D /* MyPlaceTheOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlaceTheOrderViewController.swift; sourceTree = "<group>"; };
+		6646019E1F7F75280080F18E /* jpushBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jpushBridge.h; sourceTree = "<group>"; };
+		6646019F1F7F770E0080F18E /* OilFleetBoss.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OilFleetBoss.entitlements; sourceTree = "<group>"; };
+		664601A01F7F7FF50080F18E /* NowCallOilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowCallOilViewController.swift; sourceTree = "<group>"; };
+		664601A21F7F82760080F18E /* NowCallOilTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowCallOilTableViewCell.swift; sourceTree = "<group>"; };
+		664601A51F7F8C0C0080F18E /* JWAutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWAutoScrollView.swift; sourceTree = "<group>"; };
+		664601A71F7F8C0C0080F18E /* JWDatePickerKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWDatePickerKeyBoardView.swift; sourceTree = "<group>"; };
+		664601A81F7F8C0C0080F18E /* JWDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWDatePickerView.swift; sourceTree = "<group>"; };
+		664601A91F7F8C0C0080F18E /* JWPickerKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWPickerKeyBoardView.swift; sourceTree = "<group>"; };
+		664844881F8B4CA500130BEC /* AddNewSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewSiteViewController.swift; sourceTree = "<group>"; };
+		6648448A1F8B55B400130BEC /* areas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = areas.plist; sourceTree = "<group>"; };
+		6648448C1F8B55BC00130BEC /* AreaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaPickerViewController.swift; sourceTree = "<group>"; };
+		6648448E1F8B636100130BEC /* RegistPhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistPhoViewController.swift; sourceTree = "<group>"; };
+		6648448F1F8B636100130BEC /* RegistPhoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistPhoViewController.xib; sourceTree = "<group>"; };
+		664844921F8B655F00130BEC /* RegistCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistCodeViewController.swift; sourceTree = "<group>"; };
+		664844931F8B655F00130BEC /* RegistCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistCodeViewController.xib; sourceTree = "<group>"; };
+		664844961F8B752100130BEC /* MyConstructionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstructionModel.swift; sourceTree = "<group>"; };
+		664844981F8C607F00130BEC /* EditSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSiteViewController.swift; sourceTree = "<group>"; };
+		6648449C1F8C964E00130BEC /* JWAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWAlertAction.swift; sourceTree = "<group>"; };
+		6648449E1F8C964E00130BEC /* JWAlertDismissTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWAlertDismissTransitioning.swift; sourceTree = "<group>"; };
+		6648449F1F8C964E00130BEC /* JWAlertPresentTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWAlertPresentTransitioning.swift; sourceTree = "<group>"; };
+		664844A11F8C964E00130BEC /* JWAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWAlertController.swift; sourceTree = "<group>"; };
+		664844A31F8C964E00130BEC /* JWActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWActionButton.swift; sourceTree = "<group>"; };
+		664844A91F8DA5EF00130BEC /* EditMineInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMineInfoViewController.swift; sourceTree = "<group>"; };
+		664844AB1F8DA70000130BEC /* EditMineInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMineInfoTableViewCell.swift; sourceTree = "<group>"; };
+		664844AC1F8DA70000130BEC /* EditMineInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditMineInfoTableViewCell.xib; sourceTree = "<group>"; };
+		664844AF1F8DA8C700130BEC /* EditMineInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMineInfoModel.swift; sourceTree = "<group>"; };
+		664844B11F8DEC7F00130BEC /* EditInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
+		664844B51F8DF4EB00130BEC /* UIimageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIimageView.swift; sourceTree = "<group>"; };
+		664A79DF201B2FDA0028E711 /* MDKBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDKBaseListViewController.swift; sourceTree = "<group>"; };
+		664A79E1201B304E0028E711 /* MDKbaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDKbaseTableViewCell.swift; sourceTree = "<group>"; };
+		666377771FA3048E006F64B3 /* MyApplyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApplyTableViewCell.swift; sourceTree = "<group>"; };
+		666377781FA3048E006F64B3 /* MyApplyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyApplyTableViewCell.xib; sourceTree = "<group>"; };
+		6663777B1FA312BC006F64B3 /* MyOilCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOilCardModel.swift; sourceTree = "<group>"; };
+		6688F6461F8B148900517506 /* JWProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWProgressHUD.swift; sourceTree = "<group>"; };
+		6688F6471F8B148900517506 /* JWProgressHUDLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWProgressHUDLoadingView.swift; sourceTree = "<group>"; };
+		669F9F831F7B72E9002D3C5F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		669F9F841F7B72E9002D3C5F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		669F9F8D1F7BA7CB002D3C5F /* OilOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilOrderViewController.swift; sourceTree = "<group>"; };
+		669F9F8E1F7BA7CB002D3C5F /* OilOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OilOrderViewController.xib; sourceTree = "<group>"; };
+		669F9F991F7C8699002D3C5F /* MainCardLimitApplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardLimitApplyViewController.swift; sourceTree = "<group>"; };
+		669F9F9A1F7C8699002D3C5F /* MainCardLimitApplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCardLimitApplyViewController.xib; sourceTree = "<group>"; };
+		669F9F9D1F7C9359002D3C5F /* OilCardApplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilCardApplyViewController.swift; sourceTree = "<group>"; };
+		669F9F9F1F7C9385002D3C5F /* OilCardApplyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilCardApplyTableViewCell.swift; sourceTree = "<group>"; };
+		669F9FA11F7C982C002D3C5F /* OilCardApplyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilCardApplyModel.swift; sourceTree = "<group>"; };
+		669F9FA31F7CA106002D3C5F /* MyConstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstructionViewController.swift; sourceTree = "<group>"; };
+		669F9FA51F7CA11A002D3C5F /* MyConstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstructionTableViewCell.swift; sourceTree = "<group>"; };
+		669F9FA61F7CA11A002D3C5F /* MyConstructionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyConstructionTableViewCell.xib; sourceTree = "<group>"; };
+		669F9FA91F7CA5C0002D3C5F /* MyMainOilCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMainOilCardViewController.swift; sourceTree = "<group>"; };
+		669F9FAB1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMainOilCardTableViewCell.swift; sourceTree = "<group>"; };
+		669F9FAC1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMainOilCardTableViewCell.xib; sourceTree = "<group>"; };
+		669F9FAF1F7CFDD6002D3C5F /* LinesApplySuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesApplySuccessViewController.swift; sourceTree = "<group>"; };
+		669F9FB01F7CFDD6002D3C5F /* LinesApplySuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinesApplySuccessViewController.xib; sourceTree = "<group>"; };
+		669F9FB31F7D0245002D3C5F /* MyOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderViewController.swift; sourceTree = "<group>"; };
+		669F9FB71F7D0747002D3C5F /* MyOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderTableViewCell.swift; sourceTree = "<group>"; };
+		669F9FB81F7D0747002D3C5F /* MyOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderTableViewCell.xib; sourceTree = "<group>"; };
+		66A8F2291F98771F0065EE29 /* MYCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYCycleScrollView.swift; sourceTree = "<group>"; };
+		66A8F22B1F9877330065EE29 /* BannersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannersModel.swift; sourceTree = "<group>"; };
+		66AE61E31F6FC9C600C3B174 /* ForgetPassWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPassWordViewController.swift; sourceTree = "<group>"; };
+		66AE61E41F6FC9C600C3B174 /* ForgetPassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPassWordViewController.xib; sourceTree = "<group>"; };
+		66BDCBCA1FADC54100035225 /* MyBillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBillModel.swift; sourceTree = "<group>"; };
+		66BDCBCC1FAFF6CE00035225 /* TimerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		66BDCBCE1FB05A6000035225 /* EditPassWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPassWordViewController.swift; sourceTree = "<group>"; };
+		66BDCBD01FB05C3900035225 /* MyPlaceTheOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlaceTheOrderModel.swift; sourceTree = "<group>"; };
+		66CD58502087AFF400DAD980 /* OilValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilValue.swift; sourceTree = "<group>"; };
+		66D04EF91F7F25FD003F6257 /* FillIdCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillIdCardViewController.swift; sourceTree = "<group>"; };
+		66D04EFA1F7F25FD003F6257 /* FillIdCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FillIdCardViewController.xib; sourceTree = "<group>"; };
+		66D04EFD1F7F2DD4003F6257 /* MyOilCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOilCardViewController.swift; sourceTree = "<group>"; };
+		66D04EFF1F7F2E09003F6257 /* MyOilCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOilCardTableViewCell.swift; sourceTree = "<group>"; };
+		66D04F001F7F2E09003F6257 /* MyOilCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOilCardTableViewCell.xib; sourceTree = "<group>"; };
+		66D04F031F7F33DE003F6257 /* MyBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBillViewController.swift; sourceTree = "<group>"; };
+		66D04F051F7F3401003F6257 /* MyBillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBillTableViewCell.swift; sourceTree = "<group>"; };
+		66D04F061F7F3401003F6257 /* MyBillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBillTableViewCell.xib; sourceTree = "<group>"; };
+		66D04F091F7F3A20003F6257 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		66D04F0B1F7F419E003F6257 /* LinesDistributionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesDistributionViewController.swift; sourceTree = "<group>"; };
+		66D04F111F7F6A0E003F6257 /* LinesDistributionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesDistributionTableViewCell.swift; sourceTree = "<group>"; };
+		66D786C21FEBC04A004D444A /* OrderDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
+		66D786C41FEBC052004D444A /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		66D786C51FEBC052004D444A /* OrderDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		66D786C81FEBC058004D444A /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		66DB4D351FA6C238000090E2 /* MyApplymodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApplymodel.swift; sourceTree = "<group>"; };
+		66E13D5D1F96EE550092BE5D /* RegistPassWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistPassWordViewController.swift; sourceTree = "<group>"; };
+		66E13D5E1F96EE550092BE5D /* RegistPassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistPassWordViewController.xib; sourceTree = "<group>"; };
+		66E13D711F96F4630092BE5D /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		66E13D731F9701120092BE5D /* OilOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilOrderModel.swift; sourceTree = "<group>"; };
+		66E13D751F9709E80092BE5D /* OilOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilOrderTableViewCell.swift; sourceTree = "<group>"; };
+		66E13D771F9722C90092BE5D /* NowCallOilModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowCallOilModel.swift; sourceTree = "<group>"; };
+		66E13D8D1F9838A80092BE5D /* FNMatchPullMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNMatchPullMatch.swift; sourceTree = "<group>"; };
+		66E13D8E1F9838A80092BE5D /* FNAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNAnimator.swift; sourceTree = "<group>"; };
+		66E13D8F1F9838A80092BE5D /* FNMatchFontParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNMatchFontParser.swift; sourceTree = "<group>"; };
+		66E13D901F9838A80092BE5D /* FNMatchPullAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNMatchPullAnimator.swift; sourceTree = "<group>"; };
+		66E13D911F9838A80092BE5D /* FNPullToRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNPullToRefreshExtension.swift; sourceTree = "<group>"; };
+		66E13D921F9838A80092BE5D /* FNMatchPullView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNMatchPullView.swift; sourceTree = "<group>"; };
+		66E13D931F9838A80092BE5D /* FNPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNPullToRefreshView.swift; sourceTree = "<group>"; };
+		66E2C9171F789DA80035547F /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		66E2C9181F789DA80035547F /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
+		66E2C91B1F789EA20035547F /* MineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
+		66E7F02E1F7A23FE00DCA4FF /* MyWorkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkerTableViewCell.swift; sourceTree = "<group>"; };
+		66E7F02F1F7A23FE00DCA4FF /* MyWorkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWorkerTableViewCell.xib; sourceTree = "<group>"; };
+		66E7F0321F7A2F5C00DCA4FF /* MyWorkerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkerModel.swift; sourceTree = "<group>"; };
+		66E7F0341F7A336F00DCA4FF /* WorkerDetaileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerDetaileViewController.swift; sourceTree = "<group>"; };
+		66E7F0351F7A336F00DCA4FF /* WorkerDetaileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkerDetaileViewController.xib; sourceTree = "<group>"; };
+		66EB8F641FDA2C7000210F6E /* WithdrawalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalViewController.swift; sourceTree = "<group>"; };
+		66EB8F651FDA2C7000210F6E /* WithdrawalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithdrawalViewController.xib; sourceTree = "<group>"; };
+		66EB8F681FDA2CAD00210F6E /* MyCommissionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommissionModel.swift; sourceTree = "<group>"; };
+		66EB8F6A1FDA2CB900210F6E /* MyCommissionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCommissionTableViewCell.xib; sourceTree = "<group>"; };
+		66EB8F6B1FDA2CB900210F6E /* MyCommissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommissionTableViewCell.swift; sourceTree = "<group>"; };
+		66EB8F701FDA2D2C00210F6E /* MyCommissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommissionViewController.swift; sourceTree = "<group>"; };
+		66F1F14F1F9A022D0023475A /* JHPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHPickerView.swift; sourceTree = "<group>"; };
+		9D34F17660CD271AC77BEAEC /* Pods-OilFleetBoss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilFleetBoss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OilFleetBoss/Pods-OilFleetBoss.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661051F81F6A1790002B1A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAE2E0E6B7F96EC106F8182 /* Pods_OilFleetBoss.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6610520C1F6A1790002B1A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661052171F6A1790002B1A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CF654AB20882DFC005CF59C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0CF654AD20882E18005CF59C /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			path = OilFleetBoss/AppDelegate;
+			sourceTree = SOURCE_ROOT;
+		};
+		0CF654AF20882E38005CF59C /* Conmen */ = {
+			isa = PBXGroup;
+			children = (
+				0CF654B520882E47005CF59C /* Assets.xcassets */,
+				0CF654B020882E47005CF59C /* Base.lproj */,
+				0CF654B720882E48005CF59C /* Info.plist */,
+			);
+			name = Conmen;
+			path = OilFleetBoss/Conmen;
+			sourceTree = SOURCE_ROOT;
+		};
+		0CF654B020882E47005CF59C /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0CF654B120882E47005CF59C /* LaunchScreen.storyboard */,
+				0CF654B320882E47005CF59C /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = OilFleetBoss/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		660298D91FE3B5E700CD4F18 /* 扫一扫 */ = {
+			isa = PBXGroup;
+			children = (
+				660298DA1FE3B5E700CD4F18 /* QRCodeReaderView.swift */,
+				660298DB1FE3B5E700CD4F18 /* Category.swift */,
+				660298DC1FE3B5E700CD4F18 /* QRCodeViewController.swift */,
+				660298DD1FE3B5E700CD4F18 /* MineQRCodeViewController.swift */,
+				660298DE1FE3B5E700CD4F18 /* noticeMusic.wav */,
+			);
+			path = "扫一扫";
+			sourceTree = "<group>";
+		};
+		661051F21F6A1790002B1A18 = {
+			isa = PBXGroup;
+			children = (
+				661051FD1F6A1790002B1A18 /* OilFleetBoss */,
+				661052121F6A1790002B1A18 /* OilFleetBossTests */,
+				6610521D1F6A1790002B1A18 /* OilFleetBossUITests */,
+				661051FC1F6A1790002B1A18 /* Products */,
+				C6B729E4D248F9EFD09C4CEB /* Pods */,
+				E1DAF66194961487B774164F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		661051FC1F6A1790002B1A18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661051FB1F6A1790002B1A18 /* OilFleetBoss.app */,
+				6610520F1F6A1790002B1A18 /* OilFleetBossTests.xctest */,
+				6610521A1F6A1790002B1A18 /* OilFleetBossUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661051FD1F6A1790002B1A18 /* OilFleetBoss */ = {
+			isa = PBXGroup;
+			children = (
+				6646019F1F7F770E0080F18E /* OilFleetBoss.entitlements */,
+				6610522C1F6A1CC2002B1A18 /* AllClass */,
+			);
+			path = OilFleetBoss;
+			sourceTree = "<group>";
+		};
+		661052121F6A1790002B1A18 /* OilFleetBossTests */ = {
+			isa = PBXGroup;
+			children = (
+				661052131F6A1790002B1A18 /* OilFleetBossTests.swift */,
+				661052151F6A1790002B1A18 /* Info.plist */,
+			);
+			path = OilFleetBossTests;
+			sourceTree = "<group>";
+		};
+		6610521D1F6A1790002B1A18 /* OilFleetBossUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6610521E1F6A1790002B1A18 /* OilFleetBossUITests.swift */,
+				661052201F6A1790002B1A18 /* Info.plist */,
+			);
+			path = OilFleetBossUITests;
+			sourceTree = "<group>";
+		};
+		6610522C1F6A1CC2002B1A18 /* AllClass */ = {
+			isa = PBXGroup;
+			children = (
+				0CF654AF20882E38005CF59C /* Conmen */,
+				0CF654AB20882DFC005CF59C /* AppDelegate */,
+				661052401F6A1DBD002B1A18 /* Base */,
+				6610523C1F6A1D03002B1A18 /* Login */,
+				6610522D1F6A1CC2002B1A18 /* Find */,
+				661052311F6A1CC2002B1A18 /* Home */,
+				661052351F6A1CC2002B1A18 /* Mine */,
+				661052391F6A1CC2002B1A18 /* Tool */,
+			);
+			path = AllClass;
+			sourceTree = "<group>";
+		};
+		6610522D1F6A1CC2002B1A18 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				6610522E1F6A1CC2002B1A18 /* Controller */,
+				6610522F1F6A1CC2002B1A18 /* Model */,
+				661052301F6A1CC2002B1A18 /* View */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		6610522E1F6A1CC2002B1A18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				661052521F6A205D002B1A18 /* FindViewController.swift */,
+				66E7F0341F7A336F00DCA4FF /* WorkerDetaileViewController.swift */,
+				66E7F0351F7A336F00DCA4FF /* WorkerDetaileViewController.xib */,
+				660A51331F8F17F2009BF6F2 /* AddNewWorkerViewController.swift */,
+				66D786C81FEBC058004D444A /* OrderDetailsViewController.swift */,
+				6619B3AE1FA07D890085CC4D /* MyPlaceTheOrderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6610522F1F6A1CC2002B1A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66E7F0321F7A2F5C00DCA4FF /* MyWorkerModel.swift */,
+				66D786C21FEBC04A004D444A /* OrderDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		661052301F6A1CC2002B1A18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66E7F02E1F7A23FE00DCA4FF /* MyWorkerTableViewCell.swift */,
+				66E7F02F1F7A23FE00DCA4FF /* MyWorkerTableViewCell.xib */,
+				66D786C51FEBC052004D444A /* OrderDetailsTableViewCell.swift */,
+				66D786C41FEBC052004D444A /* OrderDetailsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		661052311F6A1CC2002B1A18 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				661052321F6A1CC2002B1A18 /* Controller */,
+				661052331F6A1CC2002B1A18 /* Model */,
+				661052341F6A1CC2002B1A18 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		661052321F6A1CC2002B1A18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				669F9F831F7B72E9002D3C5F /* HomeViewController.swift */,
+				669F9F841F7B72E9002D3C5F /* HomeViewController.xib */,
+				669F9F8D1F7BA7CB002D3C5F /* OilOrderViewController.swift */,
+				669F9F8E1F7BA7CB002D3C5F /* OilOrderViewController.xib */,
+				669F9F991F7C8699002D3C5F /* MainCardLimitApplyViewController.swift */,
+				669F9F9A1F7C8699002D3C5F /* MainCardLimitApplyViewController.xib */,
+				669F9F9D1F7C9359002D3C5F /* OilCardApplyViewController.swift */,
+				669F9FAF1F7CFDD6002D3C5F /* LinesApplySuccessViewController.swift */,
+				669F9FB01F7CFDD6002D3C5F /* LinesApplySuccessViewController.xib */,
+				66D04EF91F7F25FD003F6257 /* FillIdCardViewController.swift */,
+				66D04EFA1F7F25FD003F6257 /* FillIdCardViewController.xib */,
+				66D04F0B1F7F419E003F6257 /* LinesDistributionViewController.swift */,
+				664601A01F7F7FF50080F18E /* NowCallOilViewController.swift */,
+				0C3CF81620B3B2C0004C2967 /* CommissionWithdrawalVC.swift */,
+				0C3CF81420B3B2BF004C2967 /* IntegralWithdrawalVC.swift */,
+				0C3CF81520B3B2BF004C2967 /* WithdrawalVC.swift */,
+				0C3CF81A20B3B327004C2967 /* WithdrawalRecordVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		661052331F6A1CC2002B1A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				669F9FA11F7C982C002D3C5F /* OilCardApplyModel.swift */,
+				660A51351F8F5FEA009BF6F2 /* LinesDistributionModel.swift */,
+				66E13D731F9701120092BE5D /* OilOrderModel.swift */,
+				66E13D771F9722C90092BE5D /* NowCallOilModel.swift */,
+				66A8F22B1F9877330065EE29 /* BannersModel.swift */,
+				0C3CF80620B3B2A5004C2967 /* CommissionWithdrawalModel.swift */,
+				0C3CF80420B3B2A4004C2967 /* IntegralWithdrawalModel.swift */,
+				0C3CF80520B3B2A4004C2967 /* WithdrawalModel.swift */,
+				0C3CF80720B3B2A5004C2967 /* WithdrawalRecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		661052341F6A1CC2002B1A18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				669F9F9F1F7C9385002D3C5F /* OilCardApplyTableViewCell.swift */,
+				66D04F111F7F6A0E003F6257 /* LinesDistributionTableViewCell.swift */,
+				664601A21F7F82760080F18E /* NowCallOilTableViewCell.swift */,
+				66E13D751F9709E80092BE5D /* OilOrderTableViewCell.swift */,
+				0C3CF80F20B3B2AE004C2967 /* WithdrawalTableViewCell.swift */,
+				0C3CF80C20B3B2AD004C2967 /* WithdrawalTableViewCell.xib */,
+				0C3CF80E20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.swift */,
+				0C3CF80D20B3B2AE004C2967 /* WithdrawalRecordTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		661052351F6A1CC2002B1A18 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				661052361F6A1CC2002B1A18 /* Controller */,
+				661052371F6A1CC2002B1A18 /* Model */,
+				661052381F6A1CC2002B1A18 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		661052361F6A1CC2002B1A18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				661052501F6A2055002B1A18 /* MineViewController.swift */,
+				669F9FA31F7CA106002D3C5F /* MyConstructionViewController.swift */,
+				669F9FA91F7CA5C0002D3C5F /* MyMainOilCardViewController.swift */,
+				669F9FB31F7D0245002D3C5F /* MyOrderViewController.swift */,
+				66D04EFD1F7F2DD4003F6257 /* MyOilCardViewController.swift */,
+				66D04F031F7F33DE003F6257 /* MyBillViewController.swift */,
+				66D04F091F7F3A20003F6257 /* SetUpViewController.swift */,
+				664844881F8B4CA500130BEC /* AddNewSiteViewController.swift */,
+				664844981F8C607F00130BEC /* EditSiteViewController.swift */,
+				664844A91F8DA5EF00130BEC /* EditMineInfoViewController.swift */,
+				664844B11F8DEC7F00130BEC /* EditInfoViewController.swift */,
+				66E13D711F96F4630092BE5D /* AboutUsViewController.swift */,
+				66BDCBCE1FB05A6000035225 /* EditPassWordViewController.swift */,
+				66EB8F641FDA2C7000210F6E /* WithdrawalViewController.swift */,
+				66EB8F651FDA2C7000210F6E /* WithdrawalViewController.xib */,
+				66EB8F701FDA2D2C00210F6E /* MyCommissionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		661052371F6A1CC2002B1A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66E2C91B1F789EA20035547F /* MineModel.swift */,
+				664844961F8B752100130BEC /* MyConstructionModel.swift */,
+				664844AF1F8DA8C700130BEC /* EditMineInfoModel.swift */,
+				6663777B1FA312BC006F64B3 /* MyOilCardModel.swift */,
+				66DB4D351FA6C238000090E2 /* MyApplymodel.swift */,
+				0C82F7CB208887D400ED0B6F /* MyOilCardListModel.swift */,
+				66BDCBCA1FADC54100035225 /* MyBillModel.swift */,
+				66BDCBD01FB05C3900035225 /* MyPlaceTheOrderModel.swift */,
+				66EB8F681FDA2CAD00210F6E /* MyCommissionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		661052381F6A1CC2002B1A18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66E2C9171F789DA80035547F /* MineTableViewCell.swift */,
+				66E2C9181F789DA80035547F /* MineTableViewCell.xib */,
+				669F9FA51F7CA11A002D3C5F /* MyConstructionTableViewCell.swift */,
+				669F9FA61F7CA11A002D3C5F /* MyConstructionTableViewCell.xib */,
+				669F9FAB1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.swift */,
+				669F9FAC1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.xib */,
+				669F9FB71F7D0747002D3C5F /* MyOrderTableViewCell.swift */,
+				669F9FB81F7D0747002D3C5F /* MyOrderTableViewCell.xib */,
+				66D04EFF1F7F2E09003F6257 /* MyOilCardTableViewCell.swift */,
+				66D04F001F7F2E09003F6257 /* MyOilCardTableViewCell.xib */,
+				66D04F051F7F3401003F6257 /* MyBillTableViewCell.swift */,
+				66D04F061F7F3401003F6257 /* MyBillTableViewCell.xib */,
+				664844AB1F8DA70000130BEC /* EditMineInfoTableViewCell.swift */,
+				664844AC1F8DA70000130BEC /* EditMineInfoTableViewCell.xib */,
+				666377771FA3048E006F64B3 /* MyApplyTableViewCell.swift */,
+				666377781FA3048E006F64B3 /* MyApplyTableViewCell.xib */,
+				66EB8F6B1FDA2CB900210F6E /* MyCommissionTableViewCell.swift */,
+				66EB8F6A1FDA2CB900210F6E /* MyCommissionTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		661052391F6A1CC2002B1A18 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0C3CF81D20B3C0D3004C2967 /* String+QRCode.swift */,
+				0C3CF81C20B3C0D2004C2967 /* UIImage+QRCode.swift */,
+				660298D91FE3B5E700CD4F18 /* 扫一扫 */,
+				66BDCBCC1FAFF6CE00035225 /* TimerButton.swift */,
+				66F1F14F1F9A022D0023475A /* JHPickerView.swift */,
+				66A8F2291F98771F0065EE29 /* MYCycleScrollView.swift */,
+				66E13D8C1F9838A80092BE5D /* FNMatchPull */,
+				6648449A1F8C964E00130BEC /* JWAlertViewController */,
+				6648448C1F8B55BC00130BEC /* AreaPickerViewController.swift */,
+				6648448A1F8B55B400130BEC /* areas.plist */,
+				6688F6461F8B148900517506 /* JWProgressHUD.swift */,
+				6688F6471F8B148900517506 /* JWProgressHUDLoadingView.swift */,
+				664601A41F7F8C0C0080F18E /* JWAutoScrollView */,
+				664601A61F7F8C0C0080F18E /* JWDatePickerView */,
+				661052461F6A1E20002B1A18 /* MDKConst.swift */,
+				661052481F6A1EF8002B1A18 /* MDKNetWorkTool.swift */,
+				6646019E1F7F75280080F18E /* jpushBridge.h */,
+				664844B51F8DF4EB00130BEC /* UIimageView.swift */,
+				660A51871F906ED3009BF6F2 /* StringMD5.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6610523C1F6A1D03002B1A18 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6610523D1F6A1D03002B1A18 /* Controller */,
+				6610523E1F6A1D03002B1A18 /* Model */,
+				6610523F1F6A1D03002B1A18 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6610523D1F6A1D03002B1A18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				661052561F6A227A002B1A18 /* LoginViewController.swift */,
+				66AE61E41F6FC9C600C3B174 /* ForgetPassWordViewController.xib */,
+				661052571F6A227A002B1A18 /* LoginViewController.xib */,
+				66AE61E31F6FC9C600C3B174 /* ForgetPassWordViewController.swift */,
+				6648448E1F8B636100130BEC /* RegistPhoViewController.swift */,
+				6648448F1F8B636100130BEC /* RegistPhoViewController.xib */,
+				664844921F8B655F00130BEC /* RegistCodeViewController.swift */,
+				664844931F8B655F00130BEC /* RegistCodeViewController.xib */,
+				66E13D5D1F96EE550092BE5D /* RegistPassWordViewController.swift */,
+				66E13D5E1F96EE550092BE5D /* RegistPassWordViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6610523E1F6A1D03002B1A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6610525A1F6A2CB9002B1A18 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6610523F1F6A1D03002B1A18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		661052401F6A1DBD002B1A18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				661052411F6A1DBD002B1A18 /* Controller */,
+				661052421F6A1DBD002B1A18 /* Model */,
+				661052431F6A1DBD002B1A18 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		661052411F6A1DBD002B1A18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				661052441F6A1DD8002B1A18 /* MDKBaseViewController.swift */,
+				6610524C1F6A2009002B1A18 /* MDKViewController.swift */,
+				661052541F6A21B1002B1A18 /* MDKNavigationController.swift */,
+				664A79DF201B2FDA0028E711 /* MDKBaseListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		661052421F6A1DBD002B1A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6610524A1F6A1F5C002B1A18 /* MDKHomeItem.swift */,
+				66CD58502087AFF400DAD980 /* OilValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		661052431F6A1DBD002B1A18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				664A79E1201B304E0028E711 /* MDKbaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		664601A41F7F8C0C0080F18E /* JWAutoScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				664601A51F7F8C0C0080F18E /* JWAutoScrollView.swift */,
+			);
+			path = JWAutoScrollView;
+			sourceTree = "<group>";
+		};
+		664601A61F7F8C0C0080F18E /* JWDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				664601A71F7F8C0C0080F18E /* JWDatePickerKeyBoardView.swift */,
+				664601A81F7F8C0C0080F18E /* JWDatePickerView.swift */,
+				664601A91F7F8C0C0080F18E /* JWPickerKeyBoardView.swift */,
+			);
+			path = JWDatePickerView;
+			sourceTree = "<group>";
+		};
+		6648449A1F8C964E00130BEC /* JWAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6648449B1F8C964E00130BEC /* Action */,
+				6648449D1F8C964E00130BEC /* Animator */,
+				664844A01F8C964E00130BEC /* Controller */,
+				664844A21F8C964E00130BEC /* View */,
+			);
+			path = JWAlertViewController;
+			sourceTree = "<group>";
+		};
+		6648449B1F8C964E00130BEC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				6648449C1F8C964E00130BEC /* JWAlertAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		6648449D1F8C964E00130BEC /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				6648449E1F8C964E00130BEC /* JWAlertDismissTransitioning.swift */,
+				6648449F1F8C964E00130BEC /* JWAlertPresentTransitioning.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		664844A01F8C964E00130BEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				664844A11F8C964E00130BEC /* JWAlertController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		664844A21F8C964E00130BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				664844A31F8C964E00130BEC /* JWActionButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66E13D8C1F9838A80092BE5D /* FNMatchPull */ = {
+			isa = PBXGroup;
+			children = (
+				66E13D8D1F9838A80092BE5D /* FNMatchPullMatch.swift */,
+				66E13D8E1F9838A80092BE5D /* FNAnimator.swift */,
+				66E13D8F1F9838A80092BE5D /* FNMatchFontParser.swift */,
+				66E13D901F9838A80092BE5D /* FNMatchPullAnimator.swift */,
+				66E13D911F9838A80092BE5D /* FNPullToRefreshExtension.swift */,
+				66E13D921F9838A80092BE5D /* FNMatchPullView.swift */,
+				66E13D931F9838A80092BE5D /* FNPullToRefreshView.swift */,
+			);
+			path = FNMatchPull;
+			sourceTree = "<group>";
+		};
+		C6B729E4D248F9EFD09C4CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D34F17660CD271AC77BEAEC /* Pods-OilFleetBoss.debug.xcconfig */,
+				02BED8D78CF1F5D8B853980D /* Pods-OilFleetBoss.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1DAF66194961487B774164F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9FBCFCB4D1563674283144 /* Pods_OilFleetBoss.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661051FA1F6A1790002B1A18 /* OilFleetBoss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661052231F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBoss" */;
+			buildPhases = (
+				E4C276F72FDAF7DA11E3A59D /* [CP] Check Pods Manifest.lock */,
+				661051F71F6A1790002B1A18 /* Sources */,
+				661051F81F6A1790002B1A18 /* Frameworks */,
+				661051F91F6A1790002B1A18 /* Resources */,
+				8629D7DAE3F934D429B8C8F7 /* [CP] Embed Pods Frameworks */,
+				5DC60B280A676CD95072EFAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OilFleetBoss;
+			productName = OilFleetBoss;
+			productReference = 661051FB1F6A1790002B1A18 /* OilFleetBoss.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6610520E1F6A1790002B1A18 /* OilFleetBossTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661052261F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBossTests" */;
+			buildPhases = (
+				6610520B1F6A1790002B1A18 /* Sources */,
+				6610520C1F6A1790002B1A18 /* Frameworks */,
+				6610520D1F6A1790002B1A18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661052111F6A1790002B1A18 /* PBXTargetDependency */,
+			);
+			name = OilFleetBossTests;
+			productName = OilFleetBossTests;
+			productReference = 6610520F1F6A1790002B1A18 /* OilFleetBossTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		661052191F6A1790002B1A18 /* OilFleetBossUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661052291F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBossUITests" */;
+			buildPhases = (
+				661052161F6A1790002B1A18 /* Sources */,
+				661052171F6A1790002B1A18 /* Frameworks */,
+				661052181F6A1790002B1A18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6610521C1F6A1790002B1A18 /* PBXTargetDependency */,
+			);
+			name = OilFleetBossUITests;
+			productName = OilFleetBossUITests;
+			productReference = 6610521A1F6A1790002B1A18 /* OilFleetBossUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661051F31F6A1790002B1A18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "mdk mdk";
+				TargetAttributes = {
+					661051FA1F6A1790002B1A18 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3KJ9G3LC6T;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					6610520E1F6A1790002B1A18 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3KJ9G3LC6T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 661051FA1F6A1790002B1A18;
+					};
+					661052191F6A1790002B1A18 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3KJ9G3LC6T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 661051FA1F6A1790002B1A18;
+					};
+				};
+			};
+			buildConfigurationList = 661051F61F6A1790002B1A18 /* Build configuration list for PBXProject "OilFleetBoss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661051F21F6A1790002B1A18;
+			productRefGroup = 661051FC1F6A1790002B1A18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661051FA1F6A1790002B1A18 /* OilFleetBoss */,
+				6610520E1F6A1790002B1A18 /* OilFleetBossTests */,
+				661052191F6A1790002B1A18 /* OilFleetBossUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661051F91F6A1790002B1A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D04EFC1F7F25FD003F6257 /* FillIdCardViewController.xib in Resources */,
+				66E13D601F96EE550092BE5D /* RegistPassWordViewController.xib in Resources */,
+				66EB8F6C1FDA2CB900210F6E /* MyCommissionTableViewCell.xib in Resources */,
+				669F9FA81F7CA11A002D3C5F /* MyConstructionTableViewCell.xib in Resources */,
+				661052591F6A227A002B1A18 /* LoginViewController.xib in Resources */,
+				66E7F0371F7A336F00DCA4FF /* WorkerDetaileViewController.xib in Resources */,
+				6648448B1F8B55B400130BEC /* areas.plist in Resources */,
+				664844AE1F8DA70000130BEC /* EditMineInfoTableViewCell.xib in Resources */,
+				664844911F8B636100130BEC /* RegistPhoViewController.xib in Resources */,
+				66D04F081F7F3401003F6257 /* MyBillTableViewCell.xib in Resources */,
+				66D786C61FEBC052004D444A /* OrderDetailsTableViewCell.xib in Resources */,
+				66EB8F671FDA2C7000210F6E /* WithdrawalViewController.xib in Resources */,
+				669F9FB21F7CFDD6002D3C5F /* LinesApplySuccessViewController.xib in Resources */,
+				669F9FAE1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.xib in Resources */,
+				66D04F021F7F2E09003F6257 /* MyOilCardTableViewCell.xib in Resources */,
+				66E2C91A1F789DA80035547F /* MineTableViewCell.xib in Resources */,
+				669F9F901F7BA7CB002D3C5F /* OilOrderViewController.xib in Resources */,
+				0CF654B820882E48005CF59C /* LaunchScreen.storyboard in Resources */,
+				6663777A1FA3048E006F64B3 /* MyApplyTableViewCell.xib in Resources */,
+				0C3CF81120B3B2AF004C2967 /* WithdrawalRecordTableViewCell.xib in Resources */,
+				0CF654B920882E48005CF59C /* Main.storyboard in Resources */,
+				669F9F9C1F7C8699002D3C5F /* MainCardLimitApplyViewController.xib in Resources */,
+				0CF654BA20882E48005CF59C /* Assets.xcassets in Resources */,
+				0C3CF81020B3B2AF004C2967 /* WithdrawalTableViewCell.xib in Resources */,
+				66AE61E61F6FC9C600C3B174 /* ForgetPassWordViewController.xib in Resources */,
+				66E7F0311F7A23FE00DCA4FF /* MyWorkerTableViewCell.xib in Resources */,
+				660298E31FE3B5E700CD4F18 /* noticeMusic.wav in Resources */,
+				664844951F8B655F00130BEC /* RegistCodeViewController.xib in Resources */,
+				669F9FBA1F7D0747002D3C5F /* MyOrderTableViewCell.xib in Resources */,
+				669F9F861F7B72E9002D3C5F /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6610520D1F6A1790002B1A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661052181F6A1790002B1A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DC60B280A676CD95072EFAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OilFleetBoss/Pods-OilFleetBoss-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8629D7DAE3F934D429B8C8F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OilFleetBoss/Pods-OilFleetBoss-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OilFleetBoss/Pods-OilFleetBoss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C276F72FDAF7DA11E3A59D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OilFleetBoss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661051F71F6A1790002B1A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664844A81F8C964E00130BEC /* JWActionButton.swift in Sources */,
+				664844891F8B4CA500130BEC /* AddNewSiteViewController.swift in Sources */,
+				66D04F0C1F7F419E003F6257 /* LinesDistributionViewController.swift in Sources */,
+				66A8F22C1F9877330065EE29 /* BannersModel.swift in Sources */,
+				66D04F011F7F2E09003F6257 /* MyOilCardTableViewCell.swift in Sources */,
+				661052581F6A227A002B1A18 /* LoginViewController.swift in Sources */,
+				66E7F0331F7A2F5C00DCA4FF /* MyWorkerModel.swift in Sources */,
+				664844A41F8C964E00130BEC /* JWAlertAction.swift in Sources */,
+				661052471F6A1E20002B1A18 /* MDKConst.swift in Sources */,
+				66E7F0361F7A336F00DCA4FF /* WorkerDetaileViewController.swift in Sources */,
+				669F9F9E1F7C9359002D3C5F /* OilCardApplyViewController.swift in Sources */,
+				0C3CF81F20B3C0D3004C2967 /* String+QRCode.swift in Sources */,
+				0C3CF80920B3B2A5004C2967 /* WithdrawalModel.swift in Sources */,
+				66BDCBCF1FB05A6000035225 /* EditPassWordViewController.swift in Sources */,
+				664A79E0201B2FDA0028E711 /* MDKBaseListViewController.swift in Sources */,
+				664601A31F7F82760080F18E /* NowCallOilTableViewCell.swift in Sources */,
+				66E13D5F1F96EE550092BE5D /* RegistPassWordViewController.swift in Sources */,
+				66E13D721F96F4630092BE5D /* AboutUsViewController.swift in Sources */,
+				660A51881F906ED3009BF6F2 /* StringMD5.swift in Sources */,
+				6610524D1F6A2009002B1A18 /* MDKViewController.swift in Sources */,
+				660298E01FE3B5E700CD4F18 /* Category.swift in Sources */,
+				66D04EFB1F7F25FD003F6257 /* FillIdCardViewController.swift in Sources */,
+				66D786C31FEBC04A004D444A /* OrderDetailsModel.swift in Sources */,
+				664844A71F8C964E00130BEC /* JWAlertController.swift in Sources */,
+				0C3CF80820B3B2A5004C2967 /* IntegralWithdrawalModel.swift in Sources */,
+				0C82F7CC208887D400ED0B6F /* MyOilCardListModel.swift in Sources */,
+				660A51341F8F17F2009BF6F2 /* AddNewWorkerViewController.swift in Sources */,
+				669F9FAD1F7CA5CF002D3C5F /* MyMainOilCardTableViewCell.swift in Sources */,
+				664844A61F8C964E00130BEC /* JWAlertPresentTransitioning.swift in Sources */,
+				664844991F8C608000130BEC /* EditSiteViewController.swift in Sources */,
+				66BDCBCB1FADC54100035225 /* MyBillModel.swift in Sources */,
+				66D04EFE1F7F2DD4003F6257 /* MyOilCardViewController.swift in Sources */,
+				66E13D961F9838A80092BE5D /* FNMatchFontParser.swift in Sources */,
+				664844971F8B752100130BEC /* MyConstructionModel.swift in Sources */,
+				66D786C71FEBC052004D444A /* OrderDetailsTableViewCell.swift in Sources */,
+				66E13D981F9838A80092BE5D /* FNPullToRefreshExtension.swift in Sources */,
+				664601A11F7F7FF50080F18E /* NowCallOilViewController.swift in Sources */,
+				669F9F851F7B72E9002D3C5F /* HomeViewController.swift in Sources */,
+				66CD58512087AFF400DAD980 /* OilValue.swift in Sources */,
+				664844B01F8DA8C700130BEC /* EditMineInfoModel.swift in Sources */,
+				0C3CF81720B3B2C0004C2967 /* IntegralWithdrawalVC.swift in Sources */,
+				664601AA1F7F8C0C0080F18E /* JWAutoScrollView.swift in Sources */,
+				66E2C91C1F789EA20035547F /* MineModel.swift in Sources */,
+				664601AC1F7F8C0C0080F18E /* JWDatePickerView.swift in Sources */,
+				669F9F8F1F7BA7CB002D3C5F /* OilOrderViewController.swift in Sources */,
+				66E13D9A1F9838A80092BE5D /* FNPullToRefreshView.swift in Sources */,
+				661052511F6A2055002B1A18 /* MineViewController.swift in Sources */,
+				669F9FA01F7C9385002D3C5F /* OilCardApplyTableViewCell.swift in Sources */,
+				66BDCBCD1FAFF6CE00035225 /* TimerButton.swift in Sources */,
+				664844AA1F8DA5EF00130BEC /* EditMineInfoViewController.swift in Sources */,
+				66D04F071F7F3401003F6257 /* MyBillTableViewCell.swift in Sources */,
+				669F9FB41F7D0245002D3C5F /* MyOrderViewController.swift in Sources */,
+				66E13D991F9838A80092BE5D /* FNMatchPullView.swift in Sources */,
+				0C3CF81220B3B2AF004C2967 /* WithdrawalRecordTableViewCell.swift in Sources */,
+				669F9FA41F7CA106002D3C5F /* MyConstructionViewController.swift in Sources */,
+				661052551F6A21B1002B1A18 /* MDKNavigationController.swift in Sources */,
+				664844901F8B636100130BEC /* RegistPhoViewController.swift in Sources */,
+				66BDCBD11FB05C3900035225 /* MyPlaceTheOrderModel.swift in Sources */,
+				66AE61E51F6FC9C600C3B174 /* ForgetPassWordViewController.swift in Sources */,
+				669F9F9B1F7C8699002D3C5F /* MainCardLimitApplyViewController.swift in Sources */,
+				664844A51F8C964E00130BEC /* JWAlertDismissTransitioning.swift in Sources */,
+				669F9FA71F7CA11A002D3C5F /* MyConstructionTableViewCell.swift in Sources */,
+				66E13D951F9838A80092BE5D /* FNAnimator.swift in Sources */,
+				0C3CF81B20B3B327004C2967 /* WithdrawalRecordVC.swift in Sources */,
+				664844B61F8DF4EB00130BEC /* UIimageView.swift in Sources */,
+				660298E11FE3B5E700CD4F18 /* QRCodeViewController.swift in Sources */,
+				6648448D1F8B55BC00130BEC /* AreaPickerViewController.swift in Sources */,
+				6688F6491F8B148900517506 /* JWProgressHUDLoadingView.swift in Sources */,
+				66EB8F661FDA2C7000210F6E /* WithdrawalViewController.swift in Sources */,
+				66E13D741F9701120092BE5D /* OilOrderModel.swift in Sources */,
+				669F9FA21F7C982C002D3C5F /* OilCardApplyModel.swift in Sources */,
+				66E13D761F9709E80092BE5D /* OilOrderTableViewCell.swift in Sources */,
+				664844B21F8DEC7F00130BEC /* EditInfoViewController.swift in Sources */,
+				6688F6481F8B148900517506 /* JWProgressHUD.swift in Sources */,
+				0C3CF81920B3B2C0004C2967 /* CommissionWithdrawalVC.swift in Sources */,
+				660298E21FE3B5E700CD4F18 /* MineQRCodeViewController.swift in Sources */,
+				0C3CF80B20B3B2A5004C2967 /* WithdrawalRecordModel.swift in Sources */,
+				661052531F6A205D002B1A18 /* FindViewController.swift in Sources */,
+				66EB8F711FDA2D2C00210F6E /* MyCommissionViewController.swift in Sources */,
+				66E7F0301F7A23FE00DCA4FF /* MyWorkerTableViewCell.swift in Sources */,
+				0C3CF81320B3B2AF004C2967 /* WithdrawalTableViewCell.swift in Sources */,
+				0C3CF81820B3B2C0004C2967 /* WithdrawalVC.swift in Sources */,
+				6663777C1FA312BC006F64B3 /* MyOilCardModel.swift in Sources */,
+				664844AD1F8DA70000130BEC /* EditMineInfoTableViewCell.swift in Sources */,
+				66E2C9191F789DA80035547F /* MineTableViewCell.swift in Sources */,
+				666377791FA3048E006F64B3 /* MyApplyTableViewCell.swift in Sources */,
+				660A51361F8F5FEA009BF6F2 /* LinesDistributionModel.swift in Sources */,
+				664A79E2201B304E0028E711 /* MDKbaseTableViewCell.swift in Sources */,
+				66A8F22A1F98771F0065EE29 /* MYCycleScrollView.swift in Sources */,
+				66E13D941F9838A80092BE5D /* FNMatchPullMatch.swift in Sources */,
+				66EB8F691FDA2CAD00210F6E /* MyCommissionModel.swift in Sources */,
+				664601AD1F7F8C0C0080F18E /* JWPickerKeyBoardView.swift in Sources */,
+				66E13D971F9838A80092BE5D /* FNMatchPullAnimator.swift in Sources */,
+				66D04F0A1F7F3A20003F6257 /* SetUpViewController.swift in Sources */,
+				0CF654AE20882E18005CF59C /* AppDelegate.swift in Sources */,
+				66E13D781F9722C90092BE5D /* NowCallOilModel.swift in Sources */,
+				6619B3AF1FA07D890085CC4D /* MyPlaceTheOrderViewController.swift in Sources */,
+				6610525B1F6A2CB9002B1A18 /* LoginModel.swift in Sources */,
+				66D786C91FEBC058004D444A /* OrderDetailsViewController.swift in Sources */,
+				66D04F121F7F6A0E003F6257 /* LinesDistributionTableViewCell.swift in Sources */,
+				660298DF1FE3B5E700CD4F18 /* QRCodeReaderView.swift in Sources */,
+				669F9FB11F7CFDD6002D3C5F /* LinesApplySuccessViewController.swift in Sources */,
+				6610524B1F6A1F5C002B1A18 /* MDKHomeItem.swift in Sources */,
+				664844941F8B655F00130BEC /* RegistCodeViewController.swift in Sources */,
+				66F1F1501F9A022D0023475A /* JHPickerView.swift in Sources */,
+				0C3CF80A20B3B2A5004C2967 /* CommissionWithdrawalModel.swift in Sources */,
+				664601AB1F7F8C0C0080F18E /* JWDatePickerKeyBoardView.swift in Sources */,
+				66EB8F6D1FDA2CB900210F6E /* MyCommissionTableViewCell.swift in Sources */,
+				66DB4D361FA6C238000090E2 /* MyApplymodel.swift in Sources */,
+				661052491F6A1EF8002B1A18 /* MDKNetWorkTool.swift in Sources */,
+				0C3CF81E20B3C0D3004C2967 /* UIImage+QRCode.swift in Sources */,
+				661052451F6A1DD8002B1A18 /* MDKBaseViewController.swift in Sources */,
+				669F9FB91F7D0747002D3C5F /* MyOrderTableViewCell.swift in Sources */,
+				669F9FAA1F7CA5C0002D3C5F /* MyMainOilCardViewController.swift in Sources */,
+				66D04F041F7F33DE003F6257 /* MyBillViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6610520B1F6A1790002B1A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661052141F6A1790002B1A18 /* OilFleetBossTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661052161F6A1790002B1A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6610521F1F6A1790002B1A18 /* OilFleetBossUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		661052111F6A1790002B1A18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661051FA1F6A1790002B1A18 /* OilFleetBoss */;
+			targetProxy = 661052101F6A1790002B1A18 /* PBXContainerItemProxy */;
+		};
+		6610521C1F6A1790002B1A18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661051FA1F6A1790002B1A18 /* OilFleetBoss */;
+			targetProxy = 6610521B1F6A1790002B1A18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CF654B120882E47005CF59C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CF654B220882E47005CF59C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0CF654B320882E47005CF59C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CF654B420882E47005CF59C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661052211F6A1790002B1A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		661052221F6A1790002B1A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		661052241F6A1790002B1A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D34F17660CD271AC77BEAEC /* Pods-OilFleetBoss.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OilFleetBoss/OilFleetBoss.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBoss/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleet.car;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/qingwen/OilFleetBossiOS/OilFleetBoss/OilFleetBoss/AllClass/Tool/jpushBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		661052251F6A1790002B1A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BED8D78CF1F5D8B853980D /* Pods-OilFleetBoss.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OilFleetBoss/OilFleetBoss.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBoss/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleet.car;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/qingwen/OilFleetBossiOS/OilFleetBoss/OilFleetBoss/AllClass/Tool/jpushBridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		661052271F6A1790002B1A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBossTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleetBoss.car.OilFleetBossTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilFleetBoss.app/OilFleetBoss";
+			};
+			name = Debug;
+		};
+		661052281F6A1790002B1A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBossTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleetBoss.car.OilFleetBossTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilFleetBoss.app/OilFleetBoss";
+			};
+			name = Release;
+		};
+		6610522A1F6A1790002B1A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBossUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleetBoss.car.OilFleetBossUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OilFleetBoss;
+			};
+			name = Debug;
+		};
+		6610522B1F6A1790002B1A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3KJ9G3LC6T;
+				INFOPLIST_FILE = OilFleetBossUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarOilFleetBoss.car.OilFleetBossUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OilFleetBoss;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661051F61F6A1790002B1A18 /* Build configuration list for PBXProject "OilFleetBoss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661052211F6A1790002B1A18 /* Debug */,
+				661052221F6A1790002B1A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661052231F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBoss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661052241F6A1790002B1A18 /* Debug */,
+				661052251F6A1790002B1A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661052261F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBossTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661052271F6A1790002B1A18 /* Debug */,
+				661052281F6A1790002B1A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661052291F6A1790002B1A18 /* Build configuration list for PBXNativeTarget "OilFleetBossUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6610522A1F6A1790002B1A18 /* Debug */,
+				6610522B1F6A1790002B1A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661051F31F6A1790002B1A18 /* Project object */;
+}

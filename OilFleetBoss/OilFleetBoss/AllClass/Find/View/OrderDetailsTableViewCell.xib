@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderDetailsTableViewCell" id="KGk-i7-Jjw" customClass="OrderDetailsTableViewCell" customModule="OilFleetBoss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-Is-eXh">
+                        <rect key="frame" x="9" y="0.0" width="100" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OPl-IU-aFg"/>
+                            <constraint firstAttribute="height" constant="61" id="lJC-oH-q00"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="挖掘机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1V-FU-iym">
+                        <rect key="frame" x="100" y="0.0" width="100" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="3rc-MK-o46"/>
+                            <constraint firstAttribute="height" constant="61" id="fA4-wF-kjH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="电话" translatesAutoresizingMaskIntoConstraints="NO" id="UJs-np-9zZ">
+                        <rect key="frame" x="334" y="20" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Rgt-sV-YpU"/>
+                            <constraint firstAttribute="width" constant="22" id="wCk-5z-n1p"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请叫油500升" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klp-5B-gdB">
+                        <rect key="frame" x="125" y="0.0" width="200" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="9Oy-ib-cXL"/>
+                            <constraint firstAttribute="height" constant="61" id="BQv-uH-GCw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIY-gR-J4b">
+                        <rect key="frame" x="0.0" y="60" width="375" height="1"/>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="N1K-hu-GUt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UJs-np-9zZ" firstAttribute="leading" secondItem="klp-5B-gdB" secondAttribute="trailing" constant="9" id="15c-px-gW9"/>
+                    <constraint firstAttribute="trailing" secondItem="UJs-np-9zZ" secondAttribute="trailing" constant="19" id="5Kk-KU-6Wh"/>
+                    <constraint firstItem="UJs-np-9zZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="5ht-Ao-7tN"/>
+                    <constraint firstItem="JNQ-Is-eXh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="DHQ-8M-Wpb"/>
+                    <constraint firstItem="s1V-FU-iym" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="OJO-F9-Kdb"/>
+                    <constraint firstItem="JNQ-Is-eXh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pyt-Yw-Us6"/>
+                    <constraint firstItem="s1V-FU-iym" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qze-mF-XeL"/>
+                    <constraint firstAttribute="trailing" secondItem="FIY-gR-J4b" secondAttribute="trailing" id="gez-c4-9SW"/>
+                    <constraint firstItem="klp-5B-gdB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hC5-uw-ANg"/>
+                    <constraint firstItem="FIY-gR-J4b" firstAttribute="top" secondItem="UJs-np-9zZ" secondAttribute="bottom" constant="18" id="jcu-rg-tSe"/>
+                    <constraint firstItem="FIY-gR-J4b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oaq-Nl-48v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLab" destination="JNQ-Is-eXh" id="GXQ-UN-twk"/>
+                <outlet property="oilTotal" destination="klp-5B-gdB" id="J7p-ug-I0j"/>
+                <outlet property="workType" destination="s1V-FU-iym" id="f5n-Tc-2Ez"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="电话" width="15" height="20"/>
+    </resources>
+</document>

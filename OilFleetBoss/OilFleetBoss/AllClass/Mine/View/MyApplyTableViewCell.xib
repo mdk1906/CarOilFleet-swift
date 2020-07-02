@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyApplyTableViewCell" customModule="OilFleetBoss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：2017-06-30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mka-8U-Rbm">
+                        <rect key="frame" x="14" y="59" width="200" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="F8y-0i-dvk"/>
+                            <constraint firstAttribute="width" constant="200" id="FsZ-jg-hvr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVi-N0-M15">
+                        <rect key="frame" x="61" y="59" width="300" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="fdJ-Jr-W2A"/>
+                            <constraint firstAttribute="width" constant="300" id="spj-Br-c3c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请类型：主卡额度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxR-yr-AML">
+                        <rect key="frame" x="14" y="15" width="300" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0na-2x-wUi"/>
+                            <constraint firstAttribute="width" constant="300" id="az0-qB-Gnd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YvO-cp-ZPX">
+                        <rect key="frame" x="0.0" y="88" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="szd-QD-wro"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLs-r0-FXH">
+                        <rect key="frame" x="12" y="43" width="351" height="1"/>
+                        <color key="backgroundColor" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="LYx-Sv-xqY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OVi-N0-M15" firstAttribute="top" secondItem="JLs-r0-FXH" secondAttribute="bottom" constant="15" id="4qH-dk-ODQ"/>
+                    <constraint firstItem="Mka-8U-Rbm" firstAttribute="top" secondItem="JLs-r0-FXH" secondAttribute="bottom" constant="15" id="7rt-zW-fSd"/>
+                    <constraint firstAttribute="trailing" secondItem="OVi-N0-M15" secondAttribute="trailing" constant="14" id="N15-yt-mda"/>
+                    <constraint firstItem="YvO-cp-ZPX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NYp-0Y-jwW"/>
+                    <constraint firstItem="JLs-r0-FXH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="PMB-fA-Hv0"/>
+                    <constraint firstItem="vxR-yr-AML" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="R3A-Wt-WOl"/>
+                    <constraint firstAttribute="trailing" secondItem="YvO-cp-ZPX" secondAttribute="trailing" id="SkG-ge-Ux6"/>
+                    <constraint firstItem="YvO-cp-ZPX" firstAttribute="top" secondItem="OVi-N0-M15" secondAttribute="bottom" constant="11" id="bEX-QJ-z0Z"/>
+                    <constraint firstItem="vxR-yr-AML" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="hfa-kc-tfx"/>
+                    <constraint firstItem="JLs-r0-FXH" firstAttribute="top" secondItem="vxR-yr-AML" secondAttribute="bottom" constant="13" id="jn1-Lg-jRk"/>
+                    <constraint firstAttribute="trailing" secondItem="JLs-r0-FXH" secondAttribute="trailing" constant="12" id="mSU-pk-Yod"/>
+                    <constraint firstItem="Mka-8U-Rbm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="oNL-Ro-zGF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="applyType" destination="vxR-yr-AML" id="W0Y-zF-p49"/>
+                <outlet property="moneyLab" destination="OVi-N0-M15" id="q2v-bA-hNP"/>
+                <outlet property="timeLab" destination="Mka-8U-Rbm" id="IzP-Ta-CWO"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

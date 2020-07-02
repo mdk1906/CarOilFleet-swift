@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.3.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - FDFullscreenPopGesture (1.1)
+  - IQKeyboardManagerSwift (4.0.13)
+  - JCore (1.1.5)
+  - JPush (3.0.2):
+    - JCore (~> 1.1.1)
+  - Kingfisher (3.3.4)
+  - SnapKit (3.1.2)
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
+  - WechatOpenSDK (1.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3.0)
+  - BlocksKit
+  - FDFullscreenPopGesture (~> 1.1)
+  - IQKeyboardManagerSwift
+  - JPush (= 3.0.2)
+  - Kingfisher
+  - Kingfisher (~> 3.3.4)
+  - SnapKit (~> 3.1.2)
+  - SVProgressHUD
+  - SwiftyJSON (~> 3.1.4)
+  - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IQKeyboardManagerSwift: fb399c4cddcd8d9bbcd2d0c7c81ed290b61c088e
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
+  Kingfisher: 35f289f015d26e81ea6c85048718c6205f3933c6
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  WechatOpenSDK: 0ee07a8d492299d3e47372a33da5af26524a7576
+
+PODFILE CHECKSUM: 81deb4a19bd024a22c1b850419c1e5f56f3fa521
+
+COCOAPODS: 1.4.0
