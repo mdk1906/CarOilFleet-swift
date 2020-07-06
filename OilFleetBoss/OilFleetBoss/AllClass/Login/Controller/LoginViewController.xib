@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -92,7 +90,6 @@
                         <constraint firstAttribute="width" constant="231" id="12B-2h-3wN"/>
                         <constraint firstAttribute="height" constant="30" id="GyD-2G-mjM"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -102,7 +99,6 @@
                         <constraint firstAttribute="width" constant="231" id="cFP-nE-0dv"/>
                         <constraint firstAttribute="height" constant="30" id="zBG-qB-2uc"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -175,9 +171,9 @@
     </objects>
     <resources>
         <image name="888011_2_b" width="375" height="665"/>
-        <image name="password-icon" width="20" height="24"/>
+        <image name="password-icon" width="20" height="24.5"/>
         <image name="user-icon2" width="25" height="25"/>
-        <image name="图层1拷贝" width="72" height="65"/>
-        <image name="形状1-1" width="142" height="29"/>
+        <image name="图层1拷贝" width="72.5" height="65.5"/>
+        <image name="形状1-1" width="142.5" height="29"/>
     </resources>
 </document>
